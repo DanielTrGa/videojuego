@@ -24,11 +24,11 @@ public class Jugador {
 	}
 
 	public void bajar(int power) {
-		Jugador.this.setY(Jugador.this.getY() + power);
+		Jugador.this.setY(Jugador.this.getY() - power);
 	}
 
 	public void izquierda(int power) {
-		Jugador.this.setX(Jugador.this.getX() + power);
+		Jugador.this.setX(Jugador.this.getX() - power);
 	}
 
 	public void derecha(int power) {

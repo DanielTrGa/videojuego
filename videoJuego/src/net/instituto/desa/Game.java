@@ -1,6 +1,6 @@
 package net.instituto.desa;
 
-public class Game {
+public class Game extends Jugador{
 	private static final int AVANCE = 1;
 	private static final String ABAJO = "Abajo";
 	private static final String ARRIBA = "Arriba";
@@ -10,16 +10,16 @@ public class Game {
 
 	public void control(String m) {
 		if (m.equalsIgnoreCase(DERECHA)) {
-			j.setX(j.getX() + AVANCE);
+			derecha(AVANCE);
 		}
 		if (m.equalsIgnoreCase(IZQUIERDA)) {
-			j.setX(j.getX() - AVANCE);
+			izquierda(AVANCE);
 		}
 		if (m.equalsIgnoreCase(ARRIBA)) {
-			j.setY(j.getY() - AVANCE);
+			subir(AVANCE);
 		}
 		if (m.equalsIgnoreCase(ABAJO)) {
-			j.setY(j.getY() + AVANCE);
+			bajar(AVANCE);
 		}
 	}
 }
